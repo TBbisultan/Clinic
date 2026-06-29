@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Denta Clinic — Современная стоматология</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+<!-- MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="menu-backdrop" onclick="closeMenu()"></div>
+  <nav class="menu-panel">
+    <button class="menu-close" onclick="closeMenu()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="#about" class="menu-item" onclick="closeMenu()">О клинике</a>
+    <a href="#services" class="menu-item" onclick="closeMenu()">Услуги</a>
+    <a href="#doctors" class="menu-item" onclick="closeMenu()">Врачи</a>
+    <a href="#contacts" class="menu-item" onclick="closeMenu()">Контакты</a>
+    <a href="#faq" class="menu-item" onclick="closeMenu()">FAQ</a>
+  </nav>
+</div>
+ 
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.5 2 6 5 6 8.5c0 5 3.5 8 4.5 12 .3 1 1 2 1.5 2s1.2-1 1.5-2C14.5 16.5 18 13.5 18 8.5 18 5 15.5 2 12 2z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-name">DENTA CLINIC</div>
+        <div class="logo-sub">Стоматология</div>
+      </div>
+    </div>
+    <button class="menu-btn" onclick="openMenu()">
+      <svg width="17" height="13" viewBox="0 0 17 13" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round">
+        <path d="M1 1h15M1 6.5h15M1 12h15"/>
+      </svg>
+    </button>
+  </header>
+ 
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span></span>Принимаем пациентов</div>
+    <h1>Современная<br>стоматология<br>для всей семьи</h1>
+    <p class="hero-sub">Забота о вашей улыбке —<br>наша профессия</p>
+    <a href="https://wa.me/77001234567?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F" class="hero-cta rpl" onclick="doRipple(event)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Запись на приём
+    </a>
+  </div>
+</section>
+ 
+ 
+<!-- PROMO -->
+<div class="promo-wrap fu">
+  <div class="promo-card">
+    <div class="promo-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+    <div class="promo-text">
+      <div class="promo-tag">Специальное предложение</div>
+      <div class="promo-title">Первичная консультация — бесплатно</div>
+      <div class="promo-sub">Запишитесь онлайн и получите бесплатный осмотр</div>
+    </div>
+  </div>
+</div>
+ 
+<!-- ABOUT -->
+<section id="about">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">О клинике</div></div>
+    <div class="sec-line"></div>
+    <p class="about-text">Denta Clinic — это современная стоматология, где сочетаются передовые технологии, опыт врачей и индивидуальный подход к каждому пациенту.<br><br>Мы предлагаем полный спектр стоматологических услуг для взрослых и детей: от профессиональной гигиены и лечения кариеса до сложной имплантации и протезирования.<br><br>Наша клиника оснащена новейшим оборудованием экспертного уровня, а все материалы сертифицированы и безопасны.</p>
+  </div>
+  <div class="benefits-grid fu">
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="ben-title">Безопасность</div>
+      <div class="ben-desc">Стерильность и контроль на всех этапах лечения</div>
+    </div>
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <div class="ben-title">Опытные врачи</div>
+      <div class="ben-desc">Команда специалистов с большим стажем</div>
+    </div>
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      </div>
+      <div class="ben-title">Современные технологии</div>
+      <div class="ben-desc">Оборудование последнего поколения</div>
+    </div>
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <div class="ben-title">Забота о каждом</div>
+      <div class="ben-desc">Индивидуальный подход и комфорт</div>
+    </div>
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="ben-title">10+ лет опыта</div>
+      <div class="ben-desc">Сотни успешных клинических случаев</div>
+    </div>
+    <div class="ben-card">
+      <div class="ben-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div class="ben-title">Прозрачность</div>
+      <div class="ben-desc">Понятный план и фиксированная стоимость</div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- GALLERY -->
+<section style="padding:36px 0 0">
+  <div class="fu" style="padding:0 20px 16px">
+    <div class="sec-head"><div class="sec-title">Наша клиника</div></div>
+    <div class="sec-line"></div>
+  </div>
+  <div class="gal-scroll fu" style="padding-left:20px">
+    <div class="gal-card">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Ресепшн">
+      <div class="gal-label">Ресепшн</div>
+    </div>
+    <div class="gal-card">
+      <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Зона ожидания">
+      <div class="gal-label">Зона ожидания</div>
+    </div>
+    <div class="gal-card">
+      <img src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Кабинет">
+      <div class="gal-label">Стоматологический кабинет</div>
+    </div>
+    <div class="gal-card">
+      <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Оборудование">
+      <div class="gal-label">Современное оборудование</div>
+    </div>
+    <div class="gal-card">
+      <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Лечение">
+      <div class="gal-label">Процесс лечения</div>
+    </div>
+    <div class="gal-card" style="margin-right:20px">
+      <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Пациенты">
+      <div class="gal-label">Счастливые пациенты</div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- STATS -->
+<section id="stats">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Цифры клиники</div></div>
+    <div class="sec-line"></div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num" data-target="10" data-suffix="+">0</div>
+        <div class="stat-label">лет опыта</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="7000" data-suffix="+">0</div>
+        <div class="stat-label">довольных пациентов</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="15000" data-suffix="+">0</div>
+        <div class="stat-label">успешных процедур</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="4.9" data-suffix="★">0</div>
+        <div class="stat-label">средний рейтинг</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SERVICES -->
+<section id="services">
+  <div class="fu">
+    <div class="svc-header">
+      <div>
+        <div class="svc-title">Наши услуги</div>
+        <div class="svc-line"></div>
+      </div>
+      <div class="svc-arrows">
+        <button class="arr-btn" onclick="scrollSvc(-162)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="arr-btn" onclick="scrollSvc(162)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="svc-scroll fu" id="svcScroll"></div>
+</section>
+ 
+ 
+<!-- BEFORE AFTER -->
+<section id="results">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">До / После</div></div>
+    <div class="sec-line"></div>
+  </div>
+  <div class="ba-scroll fu" style="padding-left:20px">
+    <div class="ba-card">
+      <div class="ba-imgs">
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="До">
+          <span class="ba-tag before">До</span>
+        </div>
+        <div class="ba-divider"></div>
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="После">
+          <span class="ba-tag after">После</span>
+        </div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-name">Виниры E.max</div>
+        <div class="ba-badge">2 недели</div>
+      </div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-imgs">
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="До">
+          <span class="ba-tag before">До</span>
+        </div>
+        <div class="ba-divider"></div>
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="После">
+          <span class="ba-tag after">После</span>
+        </div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-name">Отбеливание Zoom</div>
+        <div class="ba-badge">1 визит</div>
+      </div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-imgs">
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="До">
+          <span class="ba-tag before">До</span>
+        </div>
+        <div class="ba-divider"></div>
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="После">
+          <span class="ba-tag after">После</span>
+        </div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-name">Имплантация</div>
+        <div class="ba-badge">3 месяца</div>
+      </div>
+    </div>
+    <div class="ba-card" style="margin-right:20px">
+      <div class="ba-imgs">
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=80&auto=format&fit=crop&crop=face&sat=-80" loading="lazy" alt="До">
+          <span class="ba-tag before">До</span>
+        </div>
+        <div class="ba-divider"></div>
+        <div class="ba-side">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=80&auto=format&fit=crop&crop=face" loading="lazy" alt="После">
+          <span class="ba-tag after">После</span>
+        </div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-name">Реставрация</div>
+        <div class="ba-badge">1 визит</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- STEPS -->
+<section id="steps">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Как проходит лечение</div></div>
+    <div class="sec-line"></div>
+    <div class="steps-list">
+      <div class="step-item fu">
+        <div class="step-left">
+          <div class="step-num">1</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">Консультация</div>
+          <div class="step-desc">Врач внимательно выслушает вас, ответит на все вопросы и проведёт первичный осмотр.</div>
+        </div>
+      </div>
+      <div class="step-item fu">
+        <div class="step-left">
+          <div class="step-num">2</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">Диагностика</div>
+          <div class="step-desc">3D-томография и цифровые снимки помогут поставить точный диагноз.</div>
+        </div>
+      </div>
+      <div class="step-item fu">
+        <div class="step-left">
+          <div class="step-num">3</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">План лечения</div>
+          <div class="step-desc">Вы получите прозрачный план с фиксированной стоимостью — без скрытых платежей.</div>
+        </div>
+      </div>
+      <div class="step-item fu">
+        <div class="step-left">
+          <div class="step-num">4</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">Лечение</div>
+          <div class="step-desc">Комфортное лечение с современной анестезией. Вы не почувствуете боли.</div>
+        </div>
+      </div>
+      <div class="step-item fu">
+        <div class="step-left">
+          <div class="step-num">5</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-content">
+          <div class="step-title">Контрольный осмотр</div>
+          <div class="step-desc">Мы проверим результат и дадим рекомендации по уходу. Гарантия на все работы.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- DOCTORS -->
+<section id="doctors">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Наши врачи</div></div>
+    <div class="sec-line"></div>
+  </div>
+  <div class="doc-scroll fu" id="docScroll"></div>
+  <div class="dots fu" id="docDots"></div>
+</section>
+ 
+ 
+<!-- PERKS -->
+<section id="perks">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Почему выбирают нас</div></div>
+    <div class="sec-line"></div>
+    <div class="perks-grid">
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Безболезненное лечение</div>
+      </div>
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Современное оборудование</div>
+      </div>
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Опытные специалисты</div>
+      </div>
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Гарантия качества на все работы</div>
+      </div>
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Индивидуальный подход</div>
+      </div>
+      <div class="perk-item fu">
+        <div class="perk-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="perk-text">Стерильность на каждом этапе</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- CERTS -->
+<section id="certs">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Лицензии и сертификаты</div></div>
+    <div class="sec-line"></div>
+  </div>
+  <div class="cert-scroll fu" style="padding-left:20px">
+    <div class="cert-card">
+      <div class="cert-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"><path d="M12 2l2 4h5l-4 3 1.5 5L12 11l-4.5 3L9 9 5 6h5z"/><circle cx="12" cy="15" r="5"/></svg></div>
+      <div class="cert-name">Лицензия Минздрава</div>
+      <div class="cert-sub">№ЛО-7763-2019</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <div class="cert-name">Сертификат Nobel Biocare</div>
+      <div class="cert-sub">Имплантология 2023</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+      <div class="cert-name">Диплом Invisalign</div>
+      <div class="cert-sub">Ортодонтия 2024</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <div class="cert-name">Сертификат Philips Zoom</div>
+      <div class="cert-sub">Отбеливание 2023</div>
+    </div>
+    <div class="cert-card" style="margin-right:20px">
+      <div class="cert-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.7" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="cert-name">ISO 9001:2015</div>
+      <div class="cert-sub">Система качества</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CTA -->
+<div class="cta-wrap fu">
+  <div class="cta-block">
+    <h2>Запишитесь на консультацию уже сегодня</h2>
+    <p>Мы свяжемся с вами в течение нескольких минут и подберём удобное время.</p>
+    <a href="https://wa.me/77001234567?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F" class="cta-btn">Записаться</a>
+  </div>
+</div>
+ 
+ 
+<!-- FAQ -->
+<section id="faq">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Вопросы и ответы</div></div>
+    <div class="sec-line"></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Больно ли лечить зубы?</span>
+          <div class="faq-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Нет. Мы используем современные анестетики последнего поколения. Перед любой процедурой врач убедится, что вы не чувствуете боли. Лечение проходит комфортно — многие пациенты засыпают в кресле.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Сколько длится отбеливание?</span>
+          <div class="faq-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Профессиональное отбеливание Philips Zoom занимает около 1,5–2 часов за один визит. Результат — осветление до 10 тонов. Эффект сохраняется 1–2 года при соблюдении гигиены.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Есть ли гарантия на лечение?</span>
+          <div class="faq-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Да. Мы даём письменную гарантию на все виды работ: на пломбы — 2 года, на коронки и виниры — 5 лет, на импланты — гарантию на срок жизни. Все условия прописаны в договоре.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Можно ли лечить детей?</span>
+          <div class="faq-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Да, принимаем детей с 1 года. У нас работает детский стоматолог с особым подходом к маленьким пациентам. В клинике есть игровая зона и возможность лечения под закисью азота.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">Какие способы оплаты доступны?</span>
+          <div class="faq-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Принимаем наличные, банковские карты Visa/Mastercard, Kaspi QR и рассрочку без переплаты через Kaspi Bank до 12 месяцев. Оплата возможна после каждого этапа лечения.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="fu">
+    <div class="sec-head"><div class="sec-title">Контакты</div></div>
+    <div class="sec-line"></div>
+    <div class="contacts-row">
+      <div class="contact-pill">
+        <div class="cp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.45-1.45a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        </div>
+        <div class="cp-label">Телефон</div>
+        <div class="cp-value">+7 (700) 123-45-67</div>
+      </div>
+      <div class="contact-pill">
+        <div class="cp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="cp-label">Адрес</div>
+        <div class="cp-value">ул. Абая 14, оф. 201</div>
+      </div>
+      <div class="contact-pill">
+        <div class="cp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="cp-label">Режим</div>
+        <div class="cp-value">Пн–Сб 9:00–20:00</div>
+      </div>
+    </div>
+    <!-- MAP -->
+    <div class="fu" style="margin-top:16px">
+      <div class="map-wrap">
+        <div class="map-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>ул. Абая 14, офис 201</p>
+          <a href="https://go.2gis.com" class="map-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Построить маршрут
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- EXTRA CONTACTS -->
+    <div class="extra-contacts fu">
+      <a href="tel:+77001234567" class="ext-btn">
+        <div class="ext-icon ext-call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.18 2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.45-1.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div><div class="ext-label">Позвонить</div><div class="ext-sub">+7 (700) 123-45-67</div></div>
+      </a>
+      <a href="https://wa.me/77001234567" class="ext-btn">
+        <div class="ext-icon ext-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+        <div><div class="ext-label">WhatsApp</div><div class="ext-sub">Написать сейчас</div></div>
+      </a>
+      <a href="https://instagram.com" class="ext-btn">
+        <div class="ext-icon ext-ig"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+        <div><div class="ext-label">Instagram</div><div class="ext-sub">@denta.clinic</div></div>
+      </a>
+      <a href="https://go.2gis.com" class="ext-btn">
+        <div class="ext-icon ext-gis" style="font-size:12px;font-weight:800;color:#fff">2ГИС</div>
+        <div><div class="ext-label">2GIS</div><div class="ext-sub">Маршрут до клиники</div></div>
+      </a>
+    </div>
+ 
+  </div>
+</section>
+ 
+<footer>
+  <strong>DENTA CLINIC</strong><br>
+  © 2025 Все права защищены.
+</footer>
+ 
+<a href="https://wa.me/77001234567?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F" class="sticky rpl" onclick="doRipple(event)">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+  📅 Записаться на приём
+</a>
+ <script src="script.js"></script>
+</body>
+</html>
+
