@@ -80,7 +80,7 @@ body{
 }
 .hero-bg{
   position:absolute;inset:0;
-  background:url("images/clinicphoto") center top/cover no-repeat;
+  background:url("images/clinicphoto.jpg") center top/cover no-repeat;
 }
 .hero-overlay{
   position:absolute;inset:0;
