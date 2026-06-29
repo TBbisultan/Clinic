@@ -80,7 +80,7 @@ body{
 }
 .hero-bg{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1588776814546-1ffedfe0c034?w=900&q=90&auto=format&fit=crop') center top/cover no-repeat;
+  background:url("images/clinicphoto") center top/cover no-repeat;
 }
 .hero-overlay{
   position:absolute;inset:0;
