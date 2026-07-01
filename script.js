@@ -78,7 +78,7 @@ const DOCS=[
   {p:'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80&auto=format&fit=crop&crop=face',n:'Дмитрий Волков',s:'Имплантолог',e:'Опыт работы 15+ лет',bio:'Сертифицированный имплантолог Nobel Biocare. Более 2000 установленных имплантов.'},
   {p:'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80&auto=format&fit=crop&crop=face',n:'Зарина Байжанова',s:'Ортодонт',e:'Опыт работы 9+ лет',bio:'Специалист по системам Invisalign и Damon. Корректирует прикус любой сложности.'},
   {p:'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80&auto=format&fit=crop&crop=face',n:'Руслан Нурмагамбетов',s:'Ортопед',e:'Опыт работы 11+ лет',bio:'Протезирование на имплантах. Виниры E.max и коронки из диоксида циркония.'},
-  {p:'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80&auto=format&fit=crop&crop=face',n:'Карина Ли',s:'Детский стоматолог',e:'Опыт работы 8+ лет',bio:'Лечит детей с 1 года без страха. Специалист по профилактике и раннему лечению.'},
+  {p:'images/doctor-karina.jpg',n:'Карина Ли',s:'Детский стоматолог',e:'Опыт работы 8+ лет',bio:'Лечит детей с 1 года без страха. Специалист по профилактике и раннему лечению.'},
   {p:'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80&auto=format&fit=crop&crop=face',n:'Артём Сидоров',s:'Эндодонтист',e:'Опыт работы 13+ лет',bio:'Лечение каналов под микроскопом Karl Zeiss. Сохраняет зубы любой сложности.'},
 ];
 const docEl=document.getElementById('docScroll');
